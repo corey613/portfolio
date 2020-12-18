@@ -186,7 +186,7 @@ $secondFont: 'Roboto', sans-serif;
         justify-content: center;
         flex-wrap: wrap;
         opacity: 0;
-        transition: 2s all ease;
+        transition: s all ease;
         #aboutTitle{
             width: 100%;
             overflow-x: visible;
@@ -708,7 +708,7 @@ $secondFont: 'Roboto', sans-serif;
                  margin: 0;
                  font-size: 12px;
                  li{
-                     padding: 0 0 0 45px;
+                     padding: 0 70px;
                  }
              }
      
@@ -807,6 +807,17 @@ background: $icolorG;
             
     }
     
+  }
+
+  @media screen and (max-width: 500px){
+    .skillsUsed{
+        padding: 0; 
+        margin: 0;
+        font-size: 12px;
+        li{
+            padding: 0 0px;
+        }
+    }
   }
 
   @media screen and (max-width: 400px){
