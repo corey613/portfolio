@@ -283,7 +283,6 @@ header{
 
  @media screen and (max-width: 600px){
    header{
-  //  /  overflow-x: hidden;
     background: $icolorG;
     #nav{
       .navLinks{
@@ -350,4 +349,21 @@ font-size: 18px;
 }
    }
   }
+
+
+  @media screen and (max-width: 420px){
+    #headerButton{
+    
+      margin: 0;
+      #projectBtn{
+        i{
+          animation: none;
+        }
+      }
+    }
+  }
  
+
+
+
+

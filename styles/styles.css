@@ -475,4 +475,14 @@ header #titleText .bright {
     font-size: 18px;
   }
 }
+
+@media screen and (max-width: 420px) {
+  #headerButton {
+    margin: 0;
+  }
+  #headerButton #projectBtn i {
+    -webkit-animation: none;
+            animation: none;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
