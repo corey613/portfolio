@@ -335,33 +335,25 @@ justify-content: center;
   
 #headerButton{
 width: 100%;
-height: auto;
+height: 300px;
 margin: 0;
 border: none;
 outline: none;
 #projectBtn{
 width: 50%;
-height: auto;
+height: 100px;
 background: none;
 padding: 0;
 font-size: 18px;
+i{
+  animation: none;
+}
 }
 }
    }
   }
 
 
-  @media screen and (max-width: 420px){
-    #headerButton{
-    
-      margin: 0;
-      #projectBtn{
-        i{
-          animation: none;
-        }
-      }
-    }
-  }
  
 
 
