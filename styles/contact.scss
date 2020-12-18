@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+$icolor : #b6b6ff;
+$icolor2 : #d5d5fd;
+$icolorBright: #fff023;
+$icolorG: #1d1d2c;
+$backgroundC: rgba(89, 83, 138, 0.247);
+$mainFont : 'Open Sans', sans-serif;
+$secondFont: 'Roboto', sans-serif;
+
+
+@mixin center {
+    display: flex;
+    align-items: center;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#contactMain{
+    height: 100vh;
+    width: 100%;
+    background: $icolorG;
+    @include center();
+    justify-content: center;
+    #contactTitle{
+        width: 100%;
+        @include center();
+        justify-content: center;
+    }
+    #formContainer{
+        width: 100%;
+    }
+}

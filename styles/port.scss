@@ -1,0 +1,967 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+
+$htmlIcon: #e34f26;
+$cssIcon: #0170BA;
+$jsIcon: #F0DB4F;
+$gitIcon: rgb(199, 114, 233);
+$liveIcon: #ffee00;
+$icolor : #b6b6ff;
+$icolor2 : #d5d5fd;
+$icolorBright: #fff023;
+$icolorG: #1d1d2c;
+$backgroundC: rgba(89, 83, 138, 0.637);
+$mainFont : 'Open Sans', sans-serif;
+$secondFont: 'Roboto', sans-serif;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+@mixin center {
+    display: flex;
+    align-items: center;
+}
+
+@mixin skillsInc {
+    margin: 20px 50px;
+    font-size: 30px;
+}
+
+#portCont{
+   background: $icolorG;
+   width: 100%;
+   #workTitleContainer{
+       width: 100%; 
+       padding: 200px 0 0 0;
+       background: $icolorG;
+       @include center();
+       justify-content: center;
+       overflow-x: visible;
+       h1{
+        font-family: $secondFont;
+        margin: 200px 0;
+        width: 90%;
+        text-align: center;
+                font-size: 50px;
+                color: rgb(201, 211, 253);
+                letter-spacing: 2px;
+                border-bottom: solid 1px white;
+                line-height: 0.1em;
+                overflow-x: visible;
+                span{
+                    background: $icolorG;
+                     padding: 0 5px;
+                 }
+       }
+   }
+}
+#mainWork{
+    width: 100%;
+    @include center();
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: $mainFont;
+.workContainer{
+    width: 100%;
+    height: 350px;
+    @include center();
+    .gifContainer{
+      height: 200px;
+       position: relative;
+       margin: 0 900px 0 0;
+       border-radius: 5px;
+       filter: opacity(0.4);
+       transition: 2s;
+       &:hover{
+           filter: opacity(1);
+       }
+    }
+
+    
+    
+    .workRight{
+       width: 50%;
+      position: absolute;
+      left: 30%;
+      margin-left:100px;
+         .workTitle{
+          @include center();
+          padding: 0 0 0px 320px;
+          font-family: $secondFont;
+          letter-spacing: 2px;
+            h3{
+            font-size: 30px;
+            margin-top: 10px;
+            a{
+                color: $icolorBright;
+                text-decoration: none;
+            }
+        }  
+         }
+        
+        .workDescription{
+            background: $backgroundC;
+            font-size: 16px;
+            margin: 50px 0 0 20px;
+            padding: 15px 10px;
+            border-radius: 5px;
+            color: $icolor;
+        }
+
+        .skillsUsed{
+            @include center();
+            justify-content: center;
+            padding: 0px 8px; 
+            margin: 5px 0 0 150px;
+            font-size: 12px;
+            li{
+                list-style: none;
+                padding: 0 50px;
+                font-family: $secondFont;
+                font-weight: 600;
+                color: rgb(202, 202, 202);
+                overflow-x: visible;
+                overflow-y: visible;
+                line-height: 2em;
+            }
+        }
+
+        .liveCode{
+            @include center();
+            .gitCode{
+                @include center();
+                .gitIcon{
+                    color:$gitIcon;
+                    @include skillsInc();
+                    margin-left: 370px;
+                }
+            }
+            .liveSite{
+                @include center();
+                .liveIcon{
+                    color: $liveIcon;
+                    @include skillsInc();
+                    padding-left: 30px;
+                }
+            }
+        }
+    }
+
+
+}
+}
+
+#jammer{
+    margin: 50px 0;
+}
+
+#memory{
+    margin: 50px 0;
+}
+
+#photo{
+    margin: 50px 0;
+}
+
+
+#acMainContainer{
+    height: 100vh;
+    width: 100%;
+    background: $icolorG;
+    overflow: hidden;
+    @include center();
+    justify-content: center;
+    #aboutContainer{
+        width: 45%;
+        height: 400px;
+        border-radius: 10px;
+        margin: 0 80px;
+        @include center();
+        justify-content: center;
+        flex-wrap: wrap;
+        opacity: 0;
+        transition: 2s all ease;
+        #aboutTitle{
+            width: 100%;
+            overflow-x: visible;
+           h1 {
+                font-family: $secondFont;
+                font-size: 50px;
+                color: rgb(201, 211, 253);
+                letter-spacing: 2px;
+                border-bottom: solid 1px white;
+                line-height: 0.1em;
+                padding-left: 20px;
+                overflow-x: visible;
+                span{
+                   background: $icolorG;
+                    padding: 0 5px;
+                }
+            }
+        }
+                    #aboutDesc{
+                        width: 90%;
+                        font-family: $mainFont;
+                        color: $icolor;
+                        font-size: 18px;
+
+                        .bright{
+                            color: $icolor2;
+                        }
+                    }
+
+                    #tech{
+                        width: 80%;
+                        @include center();
+                        #techLeft, #techRight{
+                            margin-right: 50px;
+                            color: $icolor2;
+
+                           li{
+                            list-style: circle;
+                            padding: 5px 0;
+                           }
+                        }
+                    }
+    }
+    
+    #picContainer{
+        width: 40%;
+        height: 400px;
+        @include center();
+        justify-content: center;
+        overflow: hidden;
+        #mePic{
+            height: 250px;
+            width: 250px;
+            border-radius: 10px;
+            box-shadow: 42px 26px 0px 8px rgba(213,213,253,1);
+            filter: opacity(0.5);
+            transition: 0.5s;
+
+            &:hover{
+                filter: opacity(1);
+                box-shadow: 20px 15px 0px 5px rgba(213,213,253,1);
+            }
+        }
+    }
+
+        
+}
+
+
+#contactMain{
+    height: 100vh;
+    width: 100%;
+    background: $icolorG;
+    overflow: hidden;
+    #contactTitle{
+        width: 100%;
+        height: 100px;
+        @include center();
+        justify-content: center;
+        overflow-x: visible;
+       h1{
+        font-family: $secondFont;
+        width: 90%;
+        text-align: center;
+                font-size: 50px;
+                color: rgb(201, 211, 253);
+                letter-spacing: 2px;
+                border-bottom: solid 1px white;
+                line-height: 0.1em;
+                overflow-x: visible;
+                span{
+                    background: $icolorG;
+                     padding: 0 5px;
+                 }
+       }
+        
+    }
+    #formMain{
+        width: 100%;
+        @include center();
+        justify-content: center;
+    #formContainer{
+        width: 40%;
+        height: auto;
+        @include center();
+        justify-content: center;
+
+        form{
+           @include center();
+           flex-direction: column;
+            justify-content: space-evenly;
+            margin-top: 50px;
+            input{
+                width: 400px;
+                height: 40px;
+                margin: 10px 0;
+                background: $backgroundC;
+                color: $icolor2;
+                border: 1px solid $icolor2;
+                outline: none;
+                text-indent: 10px;
+                font-size: 18px;
+                letter-spacing: 1px;
+                font-family: $secondFont;
+                &:hover, &:focus{
+                    animation: inputColor 0.5s ease forwards;
+                 }
+            }
+
+            textarea{
+                resize: none;
+                width: 400px;
+                height: 200px;
+                background: $backgroundC;
+                color: $icolor2;
+                border: 1px solid $icolor2;
+                outline: none;
+                text-indent: 10px;
+                font-size: 18px;
+                letter-spacing: 1px;
+                font-family: $secondFont;
+                padding: 5px;
+                margin-top: 10px;
+                &:hover, &:focus{
+                   animation: inputColor 0.5s ease forwards;
+                }
+            }
+
+            ::placeholder{
+                color: $icolor2;
+                letter-spacing: 1px;
+            }
+
+            button{
+                width: 400px;
+                height: 50px;
+                background: $backgroundC;
+                color: $icolor2;
+                border: 1px solid $icolor2;
+                outline: none;
+                font-size: 25px;
+                width: 200px;
+                margin-top: 10px;
+                &:hover{
+                    animation: inputColor 0.5s ease forwards;
+                 }
+            }
+        }
+      }
+    }
+    
+}
+
+
+@keyframes wobble-hor-top {
+    0%,
+    100% {
+              transform: translateX(0%);
+              transform-origin: 50% 50%;
+    }
+    15% {
+              transform: translateX(-5px) rotate(6deg);
+    }
+    30% {
+              transform: translateX(5px) rotate(-6deg);
+    }
+    45% {
+              transform: translateX(-5px) rotate(3.6deg);
+    }
+    60% {
+              transform: translateX(5px) rotate(-2.4deg);
+    }
+    75% {
+              transform: translateX(-2px) rotate(1.2deg);
+    }
+  }
+
+
+  @keyframes inputColor {
+      from{
+        background: $backgroundC;
+        color: $icolor2;
+      }
+      to{
+        background: $icolor2;
+        color: $icolorG;
+      }
+  }
+
+  @media screen and (max-width: 1400px){
+    
+     #mainWork{
+     .workContainer{
+         .gifContainer{
+            margin: 0 750px 0 0;
+         }
+
+     
+     
+     }
+     }
+  }
+
+
+
+  @media screen and (max-width: 1200px){
+    #mainWork{
+        width: 100%;
+        font-family: $mainFont;
+    .workContainer{
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 0;
+        padding-left:50px;
+        .gifContainer{
+          width: 400px;
+          height: auto;
+          margin: 0 0px 60px 0;
+           position: relative;
+        }
+    
+        
+        .workRight{
+           width: 450px;
+          position: relative;
+          left: -5%;
+          margin-left:0px;
+          display: flex;
+          flex-wrap: nowrap;
+          align-items: center;
+          justify-content: center;
+             .workTitle{
+              padding: 0;
+              display: flex;
+              align-items: flex-end;
+              justify-content: flex-end;
+                h3{
+                font-size: 20px;
+                margin: 5px;
+
+                a{
+                    color: $icolorBright;
+                    text-decoration: none;
+                }
+            }  
+             }
+            
+            .workDescription{
+                background: $backgroundC;
+                font-size: 16px;
+                margin: 0;
+                padding: 15px 10px;
+                border-radius: 5px;
+                color: $icolor;
+            }
+    
+            .skillsUsed{
+                @include center();
+                justify-content: center;
+                padding: 0px 8px; 
+                margin: 0;
+                font-size: 12px;
+                li{
+                    list-style: none;
+                    padding: 0 50px;
+                    font-family: $secondFont;
+                    font-weight: 600;
+                    color: rgb(202, 202, 202);
+                    overflow-x: visible;
+                    overflow-y: visible;
+                    line-height: 2em;
+                }
+            }
+    
+            .liveCode{
+                @include center();
+                .gitCode{
+                    @include center();
+                    .gitIcon{
+                        color:$gitIcon;
+                        @include skillsInc();
+                        margin-left: 200px;
+                    }
+                }
+                .liveSite{
+                    @include center();
+                    .liveIcon{
+                        color: $liveIcon;
+                        @include skillsInc();
+                        padding-left: 30px;
+                    }
+                }
+            }
+        }
+    
+    
+    }
+    }
+
+  
+     #acMainContainer{
+        height: 100vh;
+        width: 100%;
+        background: $icolorG;
+        overflow: hidden;
+        @include center();
+        justify-content: center;
+        #aboutContainer{
+            width: 50%;
+            height: 600px;
+            border-radius: 10px;
+            margin: 0 0px;
+            @include center();
+            justify-content: center;
+            flex-wrap: wrap;
+            #aboutTitle{
+                width: 100%;
+                overflow-x: visible;
+                margin: 50px 0;
+               h1 {
+                    font-size: 50px;
+                }
+            }
+                        #aboutDesc{
+                            width: 90%;
+                        }
+
+        }
+        
+        #picContainer{
+            width: 35%;
+            height: 400px;
+           
+            margin-right: 50px;
+            padding-right: 50px;
+            #mePic{
+                height: 150px;
+                width: 150px;
+            }
+        }
+    
+            
+    }
+
+    #contactMain{
+        height: 100vh;
+        width: 100%;
+        background: $icolorG;
+        overflow: hidden;
+        #contactTitle{
+            width: 100%;
+            height: 100px;
+            @include center();
+            justify-content: center;
+            overflow-x: visible;
+           h1{
+            font-family: $secondFont;
+            width: 90%;
+            text-align: center;
+                    font-size: 50px;
+                    color: rgb(201, 211, 253);
+                    letter-spacing: 2px;
+                    border-bottom: solid 1px white;
+                    line-height: 0.1em;
+                    overflow-x: visible;
+                    span{
+                        background: $icolorG;
+                         padding: 0 5px;
+                     }
+           }
+            
+        }
+        #formMain{
+            width: 100%;
+            @include center();
+            justify-content: center;
+        #formContainer{
+            width: 90%;
+            height: auto;
+            @include center();
+            justify-content: center;
+    
+            form{
+               @include center();
+               flex-direction: column;
+                justify-content: space-evenly;
+                margin-top: 50px;
+                input{
+                    width: 400px;
+                    height: 40px;
+                    margin: 10px 0;
+                    background: $backgroundC;
+                    color: $icolor2;
+                    border: 1px solid $icolor2;
+                    outline: none;
+                    text-indent: 10px;
+                    font-size: 18px;
+                    letter-spacing: 1px;
+                    font-family: $secondFont;
+                    &:hover, &:focus{
+                        animation: inputColor 0.5s ease forwards;
+                     }
+                }
+    
+             
+    
+              
+    
+                button{
+                    width: 50%;
+                    height: 50px;
+                }
+            }
+          }
+        }
+        
+    }
+    
+    
+   
+
+
+  }
+
+  @media screen and (max-width: 800px){
+    #portCont{
+        background: $icolorG;
+        width: 100%;
+        margin: 0;
+        #workTitleContainer{
+            width: 100%; 
+            padding: 0;
+            background: $icolorG;
+            @include center();
+            justify-content: center;
+            overflow-x: visible;
+            h1{
+             font-family: $secondFont;
+             margin: 100px 0;
+             width: 90%;
+             text-align: center;
+                     font-size: 30px;
+                     color: rgb(201, 211, 253);
+                     letter-spacing: 2px;
+                     border-bottom: solid 1px white;
+                     line-height: 0.1em;
+                     overflow-x: visible;
+                     span{
+                         background: $icolorG;
+                          padding: 0 5px;
+                      }
+            }
+        }
+     }
+     #mainWork{
+         width: 100%;
+         
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         font-family: $mainFont;
+     .workContainer{
+        
+         margin-left: 0px;
+         height: 400px;
+         .gifContainer{
+             display: none;
+         }
+     
+         
+         .workRight{
+        left: -5%;
+       width: 100%;
+        margin: 0 0 0 0px ;
+              .workTitle{
+                  display: flex;
+                  align-items: flex-end;
+                  justify-content: flex-end;
+         padding: 0 ;
+                 h3{
+                 font-size: 20px;
+                 margin: 10px 0;
+                
+             }  
+              }
+             
+             .workDescription{
+                 font-size: 17px;
+                 margin: 0;
+                 padding: 15px 10px;
+             }
+     
+             .skillsUsed{
+                 padding: 0; 
+                 margin: 0;
+                 font-size: 12px;
+                 li{
+                     padding: 0 0 0 45px;
+                 }
+             }
+     
+             .liveCode{
+                 @include center();
+                 justify-content: center;
+                 .gitCode{
+                     @include center();
+                     .gitIcon{
+                         margin-left: 110px;
+                     }
+                 }
+                 .liveSite{
+                     @include center();
+                     .liveIcon{
+                         color: $liveIcon;
+                         @include skillsInc();
+                         padding: 0;
+                     }
+                 }
+             }
+         }
+     
+     
+     }
+     }
+
+  }
+
+
+  @media screen and (max-width: 550px){
+    #acMainContainer{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+background: $icolorG;
+        #aboutContainer{
+            width: 100%;
+            height: 600px;
+           margin: 0;
+           padding: 0;
+           @include center();
+            #aboutTitle{
+                width: 300px;
+                overflow: visible;
+                height: 100px;
+               h1 {
+                    font-family: $secondFont;
+                    font-size: 50px;
+                    color: rgb(201, 211, 253);
+                    letter-spacing: 2px;
+                    border-bottom: solid 1px white;
+                    line-height: 0.1em;
+                    padding: 20px 0 0 20px;
+                    overflow-x: visible;
+                    span{
+                        
+                       background: $icolorG;
+                        padding: 0 5px;
+                       
+                    }
+                }
+            }
+                        #aboutDesc{
+                            width: 100%;
+                            font-size: 16px;
+                           padding: 0 10px;
+                            .bright{
+                                color: $icolor2;
+                            }
+                        }
+    
+                        #tech{
+                            width: 80%;
+                            @include center();
+                            #techLeft, #techRight{
+                                margin-right: 50px;
+                                color: $icolor2;
+    
+                               li{
+                               font-size: 14px;
+                                padding: 10px 0;
+                               }
+                            }
+                        }
+        }
+        
+        #picContainer{
+            display: none;
+            #mePic{
+                display: none;
+            }
+        }
+    
+            
+    }
+    
+  }
+
+  @media screen and (max-width: 400px){
+    #portCont{
+        background: $icolorG;
+        width: 100%;
+        margin: 0;
+        #workTitleContainer{
+            width: 100%; 
+            padding: 0;
+            background: $icolorG;
+            @include center();
+            justify-content: center;
+            overflow-x: visible;
+            h1{
+             font-family: $secondFont;
+             margin: 100px 0;
+             width: 90%;
+             text-align: center;
+                     font-size: 30px;
+                     color: rgb(201, 211, 253);
+                     letter-spacing: 2px;
+                     border-bottom: solid 1px white;
+                     line-height: 0.1em;
+                     overflow-x: visible;
+                     span{
+                         background: $icolorG;
+                          padding: 0 5px;
+                      }
+            }
+        }
+     }
+     #mainWork{
+         width: 100%;
+         
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         font-family: $mainFont;
+     .workContainer{
+        
+         margin-left: 0px;
+         height: 400px;
+         .gifContainer{
+             display: none;
+         }
+     
+         
+         .workRight{
+        left: -10%;
+       width: 100%;
+        margin: 0 0 0 0px ;
+              .workTitle{
+                  display: flex;
+                  align-items: flex-end;
+                  justify-content: flex-end;
+         padding: 0 ;
+                 h3{
+                 font-size: 20px;
+                 margin: 10px 0;
+                
+             }  
+              }
+             
+             .workDescription{
+                 font-size: 17px;
+                 margin: 0;
+                 padding: 15px 10px;
+             }
+     
+             .skillsUsed{
+                 padding: 0; 
+                 margin: 0;
+                 font-size: 12px;
+                 li{
+                     padding: 0 0 0 45px;
+                 }
+             }
+     
+             .liveCode{
+                 @include center();
+                 justify-content: center;
+                 .gitCode{
+                     @include center();
+                     .gitIcon{
+                         margin-left: 110px;
+                     }
+                 }
+                 .liveSite{
+                     @include center();
+                     .liveIcon{
+                         color: $liveIcon;
+                         @include skillsInc();
+                         padding: 0;
+                     }
+                 }
+             }
+         }
+     
+     
+     }
+     }
+     
+     #jammer{
+         margin: 0;
+     }
+     
+     #memory{
+         margin: 0;
+     }
+     
+     #photo{
+         margin: 0;
+     }
+     
+     
+     
+     #contactMain{
+         height: 100vh;
+         width: 100%;
+         background: $icolorG;
+         overflow: hidden;
+         #contactTitle{
+             width: 100%;
+             height: 100px;
+             @include center();
+             justify-content: center;
+             overflow-x: visible;
+            h1{
+                     font-size: 30px;
+            }
+             
+         }
+         #formMain{
+             width: 100%;
+             @include center();
+             justify-content: center;
+         #formContainer{
+             width: 90%;
+             form{
+                @include center();
+                flex-direction: column;
+                 justify-content: space-evenly;
+                 margin-top: 50px;
+                 button{
+                     width: 50%;
+                     height: 50px;
+                     font-size: 18px;
+                 }
+             }
+           }
+         }
+         
+     }
+     
+     
+  }
